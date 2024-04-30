@@ -49,6 +49,9 @@
                     @endforeach
 			</table>
 		</div>
+		<div class="pagination  justify-content-end">
+			{{ $data->links('pagination::bootstrap-4'); }}
+		</div>
 	</div>
 </div>
 

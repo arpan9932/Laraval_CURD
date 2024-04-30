@@ -15,7 +15,7 @@ class customarController extends Controller
      */
     public function index()
     {
-        $customar=DB::table('customars')->get();
+        $customar=DB::table('customars')->paginate(5);
         return view('customarList',['data'=>$customar]);
     }
 
